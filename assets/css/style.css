@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #e4c1b3;
+    color: white;
+    display: grid;
+    justify-content: center;
+}
+
+.gallery { 
+    display: grid;
+    gap: 10px; 
+    grid-template-areas:
+            "a a b b"
+            "a a b b"
+            "c c d d"
+            "c c d d";
+    }
+
+    .img1 {
+        grid-area: a; 
+    }
+
+    .img2{
+        grid-area: b; 
+    }
+
+    .img3 {
+        grid-area: c; 
+    }
+        
+    .img4 {
+        grid-area: d;
+    }
