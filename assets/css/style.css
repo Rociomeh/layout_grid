@@ -1,32 +1,50 @@
+* {
+    font-family: 'Poiret One', cursive;
+}
+
 .navbar {
+    grid-area: header;
     background-color: #e4c1b3;
     color: white;
     display: grid;
     justify-content: center;
+    padding: 1%;
 }
 
-.gallery { 
-    display: grid;
+menu {
+    grid-area: menu;
+}
+
+main {
+    grid-area: main; 
+} 
+    
+footer{
+    grid-area: footer;
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-areas: "header header" "menu main" "footer footer";
     gap: 10px; 
-    grid-template-areas:
-            "a a b b"
-            "a a b b"
-            "c c d d"
-            "c c d d";
-    }
+}
 
-    .img1 {
-        grid-area: a; 
-    }
+.gallery {
+    grid-template-columns: auto auto;
+}
 
-    .img2{
-        grid-area: b; 
-    }
+.gallery img {
+    width: 50%;
+    height: 50%;
+}
 
-    .img3 {
-        grid-area: c; 
-    }
-        
-    .img4 {
-        grid-area: d;
-    }
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: #e4c1b3;
+}
+
+footer a {
+    color: white;
+    padding: 10%;
+}
